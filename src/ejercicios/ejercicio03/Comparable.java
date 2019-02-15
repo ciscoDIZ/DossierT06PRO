@@ -9,6 +9,6 @@ package ejercicios.ejercicio03;
  *
  * @author Francisco A Domínguez Iceta 1ºDAW.
  */
-public interface Comparando {
-    public abstract Integer comparar(FigurasGeometricas f1, FigurasGeometricas f2);
+public interface Comparable {
+    public abstract Integer comparando(FigurasGeometricas f1, FigurasGeometricas f2);
 }

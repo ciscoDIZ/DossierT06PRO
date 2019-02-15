@@ -15,15 +15,13 @@ public abstract class FigurasGeometricas{
     public FigurasGeometricas(int lados){
         this.lados = lados;
     }
-    public static Integer comparar(Comparando c, FigurasGeometricas f1, FigurasGeometricas f2){
-        return c.comparar(f1,f2);
+    public static Integer comparar(Comparable c, FigurasGeometricas f1, FigurasGeometricas f2){
+        return c.comparando(f1,f2);
     }
     public abstract double area();
 
     @Override
     public String toString() {
         return "numero lados: "+lados;
-    }
-    
-    
+    } 
 }
