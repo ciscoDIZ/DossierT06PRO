@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicios.ejercicio03;
+package pruebas;
 
 /**
  *
  * @author Francisco A Domínguez Iceta 1ºDAW.
  */
-@FunctionalInterface
-public interface Comparable {
-    public abstract Integer comparando(FigurasGeometricas f1, FigurasGeometricas f2);
-    
+public interface Bicho {
+
+    default void decirHola() {
+        System.out.println("Hola bicho!!!!!");
+    }
 }

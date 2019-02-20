@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicios.ejercicio04;
-
+package ejercicios.streams;
 
 
 /**
@@ -13,8 +12,7 @@ package ejercicios.ejercicio04;
  */
 public class Hombre extends Persona{
 
-    public Hombre(String nombre, String apellido1, String apellido2, int edad
-            , int atura, double peso) {
+    public Hombre(String nombre, String apellido1, String apellido2, int edad, int atura, double peso) {
         super(nombre, apellido1, apellido2, edad, atura, peso);
     }
 
@@ -28,4 +26,5 @@ public class Hombre extends Persona{
     public String toString() {
         return "Hombre: "+super.toString()+"\nPeso ideal: "+calcularPesoIdeal();
     }
+
 }

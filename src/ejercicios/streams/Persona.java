@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicios.ejercicio04;
+package ejercicios.streams;
+
+import practica17.*;
 
 
 
@@ -24,7 +26,7 @@ resultado del peso ideal*/
  *
  * @author Francisco A Domínguez Iceta 1ºDAW.
  */
-public abstract class Persona{
+public abstract class Persona implements Ordenable<Persona>{
     protected String nombre;
     protected String apellido1;
     protected String apellido2;
@@ -32,8 +34,7 @@ public abstract class Persona{
     protected int altura;
     protected double peso;
 
-    public Persona(String nombre, String apellido1, String apellido2, int edad
-            , int atura, double peso) {
+    public Persona(String nombre, String apellido1, String apellido2, int edad, int atura, double peso) {
         this.nombre = nombre;
         this.apellido1 = apellido1;
         this.apellido2 = apellido2;
@@ -52,9 +53,23 @@ public abstract class Persona{
     protected double calcularIMC(){
         return  this.peso / ((double)this.altura*(double)this.altura);
     }
-    
-    
+
+    @Override
+    public boolean esMayorQue(Persona p) {
+        return this.edad > p.edad;
+    }
+
+    @Override
+    public boolean esMenorQue(Persona p) {
+        return this.edad < p.edad;
+    }
+
+    @Override
+    public boolean esIgualQue(Persona p) {
+        return this.edad == p.edad;
+    }
     
     public abstract double calcularPesoIdeal();
+    
     
 }

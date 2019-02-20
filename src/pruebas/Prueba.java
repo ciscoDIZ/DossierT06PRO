@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicios.ejercicio03;
+package pruebas;
 
 /**
  *
  * @author Francisco A Domínguez Iceta 1ºDAW.
  */
 @FunctionalInterface
-public interface Comparable {
-    public abstract Integer comparando(FigurasGeometricas f1, FigurasGeometricas f2);
-    
+public interface Prueba {
+    Integer miPruebita(Integer a, Integer b);
+    static Integer reducir(Integer a, Integer b, Prueba p){
+        return p.miPruebita(a, b);
+    }
 }

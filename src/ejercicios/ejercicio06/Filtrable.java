@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicios.ejercicio03;
+package ejercicios.ejercicio06;
+
+import java.util.ArrayList;
 
 /**
  *
  * @author Francisco A Domínguez Iceta 1ºDAW.
  */
-@FunctionalInterface
-public interface Comparable {
-    public abstract Integer comparando(FigurasGeometricas f1, FigurasGeometricas f2);
-    
+public interface Filtrable<T> {
+    public abstract Boolean filtrado(T o);
 }

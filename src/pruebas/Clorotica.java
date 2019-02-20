@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicios.ejercicio03;
+package pruebas;
 
 /**
  *
  * @author Francisco A Domínguez Iceta 1ºDAW.
  */
-@FunctionalInterface
-public interface Comparable {
-    public abstract Integer comparando(FigurasGeometricas f1, FigurasGeometricas f2);
+public class Clorotica implements Bicho, Planta {
+    @Override
+    public void decirHola() {
+        Bicho.super.decirHola();
+    }
     
+    static void decirAdios(){
+        System.out.println("jajja");
+    }
 }

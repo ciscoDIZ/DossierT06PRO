@@ -10,7 +10,6 @@ package ejercicios.ejercicio04;
 /**
  *
  * @author Francisco de Asís Domínguez Iceta. 1º DAW, IES Puerto de la Cruz
- * @param <T>
  */
 public abstract class Comparador{
     public static void ordenar(Ordenable o, Object[] array){
