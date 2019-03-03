@@ -14,7 +14,7 @@ package practica16;
  */
 
 public class Jugador  extends ProfesionalBaloncesto{
-    enum Posicion{
+   public enum Posicion{
         BASE,
         PIVOT,
         ALERO,
